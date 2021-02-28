@@ -1,0 +1,623 @@
+{
+    "mem": 41949708,
+    "name": "testdb",
+    "table": [
+        {
+            "col_num": 9,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "p_partkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 55,
+                    "key": 2,
+                    "name": "p_name",
+                    "null": true,
+                    "ty": 2
+                },
+                {
+                    "char_len": 25,
+                    "key": 2,
+                    "name": "p_mfgr",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 10,
+                    "key": 2,
+                    "name": "p_brand",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 25,
+                    "key": 2,
+                    "name": "p_type",
+                    "null": true,
+                    "ty": 2
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "p_size",
+                    "null": true,
+                    "ty": 0
+                },
+                {
+                    "char_len": 10,
+                    "key": 2,
+                    "name": "p_container",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "p_retailprice",
+                    "null": true,
+                    "ty": 4
+                },
+                {
+                    "char_len": 23,
+                    "key": 2,
+                    "name": "p_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "pk_p_partkey",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 331,
+                    "record_size": 12,
+                    "root_page": 27,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 1,
+            "name": "part",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0
+                ],
+                "name": "p_partkey"
+            },
+            "record_num": 4000,
+            "record_onepg": 87,
+            "record_size": 93,
+            "table_id": 0
+        },
+        {
+            "col_num": 3,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "r_regionkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 25,
+                    "key": 2,
+                    "name": "r_name",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 152,
+                    "key": 2,
+                    "name": "r_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "pk_r_regionkey",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 1,
+                    "record_size": 12,
+                    "root_page": 0,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 1,
+            "name": "region",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0
+                ],
+                "name": "r_regionkey"
+            },
+            "record_num": 5,
+            "record_onepg": 220,
+            "record_size": 37,
+            "table_id": 1
+        },
+        {
+            "col_num": 4,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "n_nationkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 25,
+                    "key": 2,
+                    "name": "n_name",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 0,
+                    "key": 1,
+                    "name": "n_regionkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 152,
+                    "key": 2,
+                    "name": "n_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "f_key_index": [
+                1
+            ],
+            "foreign": [
+                {
+                    "data": {
+                        "cols": [
+                            2
+                        ],
+                        "name": "n_regionkey"
+                    },
+                    "sid": 1
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "pk_n_nationkey",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 3,
+                    "record_size": 12,
+                    "root_page": 1,
+                    "ty": [
+                        0
+                    ]
+                },
+                {
+                    "key": [
+                        2
+                    ],
+                    "key_num": 1,
+                    "name": "fk_n_regionkey1",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 3,
+                    "record_size": 12,
+                    "root_page": 1,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 2,
+            "name": "nation",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0
+                ],
+                "name": "n_nationkey"
+            },
+            "record_num": 25,
+            "record_onepg": 199,
+            "record_size": 41,
+            "table_id": 2
+        },
+        {
+            "col_num": 8,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "c_custkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 25,
+                    "key": 2,
+                    "name": "c_name",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 40,
+                    "key": 2,
+                    "name": "c_address",
+                    "null": true,
+                    "ty": 2
+                },
+                {
+                    "char_len": 0,
+                    "key": 1,
+                    "name": "c_nationkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 15,
+                    "key": 2,
+                    "name": "c_phone",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "c_acctbal",
+                    "null": true,
+                    "ty": 4
+                },
+                {
+                    "char_len": 10,
+                    "key": 2,
+                    "name": "c_mktsegment",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 117,
+                    "key": 2,
+                    "name": "c_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "f_key_index": [
+                1
+            ],
+            "foreign": [
+                {
+                    "data": {
+                        "cols": [
+                            3
+                        ],
+                        "name": "c_nationkey"
+                    },
+                    "sid": 2
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "pk_c_custkey",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 1248,
+                    "record_size": 12,
+                    "root_page": 365,
+                    "ty": [
+                        0
+                    ]
+                },
+                {
+                    "key": [
+                        3
+                    ],
+                    "key_num": 1,
+                    "name": "fk_c_nationkey1",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 1203,
+                    "record_size": 12,
+                    "root_page": 488,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 2,
+            "name": "customer",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0
+                ],
+                "name": "c_custkey"
+            },
+            "record_num": 15000,
+            "record_onepg": 90,
+            "record_size": 90,
+            "table_id": 3
+        },
+        {
+            "col_num": 5,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 1,
+                    "name": "ps_partkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "ps_suppkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "ps_availqty",
+                    "null": true,
+                    "ty": 0
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "ps_supplycost",
+                    "null": true,
+                    "ty": 4
+                },
+                {
+                    "char_len": 199,
+                    "key": 2,
+                    "name": "ps_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "f_key_index": [
+                1
+            ],
+            "foreign": [
+                {
+                    "data": {
+                        "cols": [
+                            0
+                        ],
+                        "name": "ps_partkey"
+                    },
+                    "sid": 0
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0,
+                        1
+                    ],
+                    "key_num": 2,
+                    "name": "pk_",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0,
+                        4
+                    ],
+                    "page_num": 1332,
+                    "record_size": 16,
+                    "root_page": 365,
+                    "ty": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "fk_ps_partkey1",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 1332,
+                    "record_size": 12,
+                    "root_page": 365,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 2,
+            "name": "partsupp",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0,
+                    1
+                ],
+                "name": ""
+            },
+            "record_num": 16000,
+            "record_onepg": 226,
+            "record_size": 36,
+            "table_id": 4
+        },
+        {
+            "col_num": 9,
+            "col_ty": [
+                {
+                    "char_len": 0,
+                    "key": 0,
+                    "name": "o_orderkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 0,
+                    "key": 1,
+                    "name": "o_custkey",
+                    "null": false,
+                    "ty": 0
+                },
+                {
+                    "char_len": 1,
+                    "key": 2,
+                    "name": "o_orderstatus",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "o_totalprice",
+                    "null": true,
+                    "ty": 4
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "o_orderdate",
+                    "null": true,
+                    "ty": 3
+                },
+                {
+                    "char_len": 15,
+                    "key": 2,
+                    "name": "o_orderpriority",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 15,
+                    "key": 2,
+                    "name": "o_clerk",
+                    "null": true,
+                    "ty": 1
+                },
+                {
+                    "char_len": 0,
+                    "key": 2,
+                    "name": "o_shippriority",
+                    "null": true,
+                    "ty": 0
+                },
+                {
+                    "char_len": 79,
+                    "key": 2,
+                    "name": "o_comment",
+                    "null": true,
+                    "ty": 2
+                }
+            ],
+            "f_key_index": [
+                1
+            ],
+            "foreign": [
+                {
+                    "data": {
+                        "cols": [
+                            1
+                        ],
+                        "name": "o_custkey"
+                    },
+                    "sid": 3
+                }
+            ],
+            "index": [
+                {
+                    "key": [
+                        0
+                    ],
+                    "key_num": 1,
+                    "name": "pk_o_orderkey",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 2498,
+                    "record_size": 12,
+                    "root_page": 365,
+                    "ty": [
+                        0
+                    ]
+                },
+                {
+                    "key": [
+                        1
+                    ],
+                    "key_num": 1,
+                    "name": "fk_o_custkey1",
+                    "next_del_page": 4294967295,
+                    "offset": [
+                        0
+                    ],
+                    "page_num": 1875,
+                    "record_size": 12,
+                    "root_page": 451,
+                    "ty": [
+                        0
+                    ]
+                }
+            ],
+            "index_num": 2,
+            "name": "orders",
+            "p_key_index": 0,
+            "primary": {
+                "cols": [
+                    0
+                ],
+                "name": "o_orderkey"
+            },
+            "record_num": 30000,
+            "record_onepg": 115,
+            "record_size": 71,
+            "table_id": 5
+        }
+    ],
+    "table_num": 6
+}
